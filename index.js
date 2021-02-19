@@ -39,7 +39,10 @@ app.use('/api', verificarRoutes);
 app.use('/api/login', loginRoutes);
 app.use('/api/busqueda', busquedaRoutes);
 app.use( '/api/usuarios', require('./routes/usuarios') );
-
+app.use( '/api/unidades', require('./routes/unidad') );
+app.use( '/api/respondea', require('./routes/responder') );
+app.use( '/api/macro', require('./routes/macroProceso') );
+app.use( '/api/indicadores', require('./routes/indicadores') );
 app.use('/api/upload',uploadRoutes); 
 
 

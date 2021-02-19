@@ -123,7 +123,7 @@ function obtenerMenu(ROLE) {
     } 
     if (ROLE === 'USER_ROLE') {
         menu[0].submenu.unshift( 
-            { titulo : 'INDICADORES', url: '/dashboard/indicadores' }, 
+            { titulo : 'INDICADORES', url: '/dashboard/indicadores' }, indicadoresGestion
      
 
       );
@@ -139,23 +139,30 @@ function obtenerMenu(ROLE) {
       
     }
 
-    if (ROLE === 'EMPLEADO_ROLE') {
+    if (ROLE === 'VICERECTOR_ROLE') {
         menu[0].submenu.unshift(  
-    
+       
         
         );
       
     }
 
 
-    if (ROLE === 'PROFESIONAL_ROLE') {
+    if (ROLE === 'DIRECTOR_ROLE') {
         menu[0].submenu.unshift(  
 
         
         );
       
     }
+    if (ROLE === 'PLANIFICADOR_ROLE') {
+        menu[0].submenu.unshift(  
 
+            { titulo : 'INDICADORES', url: '/dashboard/indicadoresGestion' },
+            { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
 
 
     return menu;
