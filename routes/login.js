@@ -164,7 +164,16 @@ function obtenerMenu(ROLE) {
       
     }
 
+    if (ROLE === 'UPDI_ROLE') {
+        menu[0].submenu.unshift(  
 
+            { titulo : 'INDICADORES UPDI', url: '/dashboard/indicadoresUpdi' },
+          //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
+
+    
     return menu;
 
 } 
