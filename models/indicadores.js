@@ -44,6 +44,8 @@ const IndicadoresSchema = mongoose.Schema({
     anual:String,
     observaciones:String,
     periodicidad:String,
+    solicitaUpd:String,
+    autorizacion: String,
     fechaReporte: { type: Date, required: true, default: Date.now },
     usuario: {
     type: mongoose.Types.ObjectId, ref: 'Usuario'
