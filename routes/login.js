@@ -123,7 +123,7 @@ function obtenerMenu(ROLE) {
     } 
     if (ROLE === 'USER_ROLE') {
         menu[0].submenu.unshift( 
-            { titulo : 'INDICADORES', url: '/dashboard/indicadores' }, indicadoresGestion
+            { titulo : 'INDICADORES', url: '/dashboard/indicadores' }
      
 
       );
