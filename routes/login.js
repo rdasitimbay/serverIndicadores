@@ -123,8 +123,8 @@ function obtenerMenu(ROLE) {
     } 
     if (ROLE === 'USER_ROLE') {
         menu[0].submenu.unshift( 
-            { titulo : 'INDICADORES', url: '/dashboard/indicadores' }
-     
+            { titulo : 'INDICADORES', url: '/dashboard/indicadores' },
+           
 
       );
   
@@ -134,6 +134,14 @@ function obtenerMenu(ROLE) {
     if (ROLE === 'RECTOR_ROLE') {
         menu[0].submenu.unshift(  
            
+        
+        );
+      
+    }
+
+    if (ROLE === 'REQUIRENTE_ROLE') {
+        menu[0].submenu.unshift(  
+            { titulo : 'REFORMAS PRESUPUESTARIAS', url: '/dashboard/reformas' }
         
         );
       
