@@ -17,6 +17,14 @@ app.use(bodyParser.json({ limit: '50mb', extended: true, parameterLimit: 500000 
 //app.use(cors({origin: true, credentials:true},{maxHttpHeaderSize:true}))
 app.use(express.static(path.join(__dirname,'client')))
 
+
+app.use('/public', express.static('public'));
+
+var serveIndex2 = require('serve-index');
+app.use(express.static(__dirname + '/'))
+app.use('/public',serveIndex2(__dirname + '/public'));
+
+
 // Lectura y parseo del body
 app.use( express.json() );
 
@@ -26,7 +34,7 @@ var loginRoutes = require('./routes/login');
 var imagenesRoutes = require('./routes/imagenes');
 var uploadRoutes = require('./routes/upload');
 var busquedaRoutes = require('./routes/busqueda');
-
+var userRoutesdocumentos = require ('./routes/user.route');
 var serveIndex = require('serve-index');
 app.use(express.static(__dirname + '/'))
 app.use('/uploads',serveIndex(__dirname + '/uploads'));
@@ -43,8 +51,9 @@ app.use( '/api/unidades', require('./routes/unidad') );
 app.use( '/api/respondea', require('./routes/responder') );
 app.use( '/api/macro', require('./routes/macroProceso') );
 app.use( '/api/indicadores', require('./routes/indicadores') );
+app.use( '/api/reforma', require('./routes/reforma') );
 app.use('/api/upload',uploadRoutes); 
-
+app.use('/api', userRoutesdocumentos)
 
 
 app.use('/api/img',imagenesRoutes);
