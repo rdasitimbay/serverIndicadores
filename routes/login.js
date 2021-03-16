@@ -141,8 +141,8 @@ function obtenerMenu(ROLE) {
 
     if (ROLE === 'REQUIRENTE_ROLE') {
         menu[0].submenu.unshift(  
-            { titulo : 'REFORMAS PRESUPUESTARIAS', url: '/dashboard/reformas' }
-        
+            { titulo : 'REFORMAS PRESUPUESTARIAS', url: '/dashboard/reformas' },
+            { titulo : 'REFORMAS ', url: '/dashboard/reformasRequirente' }
         );
       
     }
