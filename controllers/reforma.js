@@ -53,7 +53,7 @@ const getReformaId = (req, res) => {
 
 //ENCUENTRE UNA OPCION
 const getIdIReforma=  (req, res) => {
-    Reeforma.findById(req.params._id)
+    Reforma.findById(req.params._id)
         .then(reforma => {
             if (!reforma) {
                 return res.status(404).json({
@@ -76,7 +76,7 @@ const getIdIReforma=  (req, res) => {
 // ACTUALIZAR OPCION
 const actualizarReforma =  (req, res) => {
     //Encuentra un cliente y actualízalo
-    Reforme.findByIdAndUpdate(req.body._id, req.body, { new: true })
+    Reforma.findByIdAndUpdate(req.body._id, req.body, { new: true })
         .then(reforma => {
             if (!reforma) {
                 return res.status(404).json({

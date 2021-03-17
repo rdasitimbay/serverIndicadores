@@ -1,11 +1,10 @@
 
 const mongoose = require('mongoose');
 
-
+                              
 var rolesValidos = {
    values: ['ADMIN_ROLE', 'USER_ROLE', 'RECTOR_ROLE', 'VICERECTOR_ROLE', 'DIRECTOR_ROLE', 'PLANIFICADOR_ROLE', 
-   'UPDI_ROLE', 'INACTIVO',
-'REQUIRENTE_ROLE'],
+   'UPDI_ROLE', 'INACTIVO','REQUIRENTE_ROLE','PRESUPUESTO_ROLE','DIRECTOR_UPDI_ROLE','VICERECTOR_ADMINISTRATIVO_ROLE','VICERECTOR_ACADEMICO__GENERAL_ROLE' ],
    message: '{VALUE} no es un rol permitido'
 };
 

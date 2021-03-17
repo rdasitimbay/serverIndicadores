@@ -155,6 +155,8 @@ function obtenerMenu(ROLE) {
       
     }
 
+//,'DIRECTOR_UPDI_ROLE','VICERECTOR_ADMINISTRATIVO_ROLE','VICERECTOR_ACADEMICO__GENERAL_ROLE'    
+
 
     if (ROLE === 'DIRECTOR_ROLE') {
         menu[0].submenu.unshift(  
@@ -176,6 +178,40 @@ function obtenerMenu(ROLE) {
         menu[0].submenu.unshift(  
 
             { titulo : 'INDICADORES UPDI', url: '/dashboard/indicadoresUpdi' },
+          //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
+
+    if (ROLE === 'PRESUPUESTO_ROLE') {
+        menu[0].submenu.unshift(  
+
+            { titulo : 'REFORMAS GENERALES', url: '/dashboard/reformasGenerales' },
+          //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
+    if (ROLE === 'DIRECTOR_UPDI_ROLE') {
+        menu[0].submenu.unshift(  
+
+            { titulo : 'REFORMAS GENERALES', url: '/dashboard/reformasGenerales' },
+          //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
+    if (ROLE === 'VICERECTOR_ADMINISTRATIVO_ROLE') {
+        menu[0].submenu.unshift(  
+
+            { titulo : 'REFORMAS GENERALES', url: '/dashboard/reformasGenerales' },
+          //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+        );
+      
+    }
+
+    if (ROLE === 'VICERECTOR_ACADEMICO__GENERAL_ROLE') {
+        menu[0].submenu.unshift(  
+
+            { titulo : 'REFORMAS GENERALES', url: '/dashboard/reformasGenerales' },
           //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
         );
       
