@@ -51,9 +51,12 @@ app.use( '/api/unidades', require('./routes/unidad') );
 app.use( '/api/respondea', require('./routes/responder') );
 app.use( '/api/macro', require('./routes/macroProceso') );
 app.use( '/api/indicadores', require('./routes/indicadores') );
+/* Notification*/
+app.use('/api/notification', require('./routes/notification') );
 app.use( '/api/reforma', require('./routes/reforma') );
 app.use('/api/upload',uploadRoutes); 
 app.use('/api', userRoutesdocumentos)
+
 
 
 app.use('/api/img',imagenesRoutes);

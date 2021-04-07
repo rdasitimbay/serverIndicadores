@@ -44,8 +44,20 @@ const IndicadoresSchema = mongoose.Schema({
     anual:String,
     observaciones:String,
     periodicidad:String,
+
+    /* Avance Indicadores*/
+    periods: Array,
+    resultYear: [{
+        result: String,
+        compliance: String,
+        class: String,
+        color: String,
+        enabled: Boolean
+    }],
+
     solicitaUpd:String,
     autorizacion: String,
+
     fechaReporte: { type: Date, required: true, default: Date.now },
     usuario: {
     type: mongoose.Types.ObjectId, ref: 'Usuario'
