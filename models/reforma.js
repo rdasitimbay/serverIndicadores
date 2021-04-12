@@ -20,6 +20,12 @@ requisito3:String,
 requisito4:String,
 descripcion:String,
 
+analisisInformeRequisito:String,
+analisisInformeRequisito2:String,
+analisisInformeRequisito3:String,
+analisisInformeRequisito4:String,
+analisisInformeRequisitoDescripcion:String,
+
 analistaTecnico1:String,
 analistaTecnico2:String,
 analistaTecnico3:String,
