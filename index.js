@@ -57,6 +57,10 @@ app.use( '/api/reforma', require('./routes/reforma') );
 app.use('/api/upload',uploadRoutes); 
 app.use('/api', userRoutesdocumentos)
 
+//Ruta 
+app.use('/api/latacunga', require('./routes/latacungas'));
+app.use( '/api/iasa', require('./routes/iasas') );
+app.use( '/api/santoDomingo', require('./routes/santoDomingos') );
 
 
 app.use('/api/img',imagenesRoutes);
