@@ -24,7 +24,7 @@ const creaIndicador = (req, res) => {
 
 // todos las opciones
 const getIndicador = (req, res) => {
-    Indicadores.find({}).populate('usuario img')
+    Indicadores.find({}).populate('usuario img').sort({ fechaReporte: -1 })
         .then(indicadores => {
             res.json(indicadores);
         }).catch(err => {
@@ -38,7 +38,7 @@ const getIndicador = (req, res) => {
 
 // todos las opciones
 const getIndicadorId = (req, res) => {
-    Indicadores.find({usuario:req.query.usuario_id})
+    Indicadores.find({usuario:req.query.usuario_id}).sort({ fechaReporte: -1 })
 
     .populate('usuario ')
         .then(indicador => {

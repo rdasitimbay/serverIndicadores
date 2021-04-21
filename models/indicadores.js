@@ -54,6 +54,7 @@ const IndicadoresSchema = mongoose.Schema({
         color: String,
         enabled: Boolean
     }],
+    solicitaAvanceIndicador: String,
 
     solicitaUpd:String,
     autorizacion: String,

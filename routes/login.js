@@ -169,7 +169,7 @@ function obtenerMenu(ROLE) {
         menu[0].submenu.unshift(  
 
             { titulo : 'INDICADORES', url: '/dashboard/indicadoresGestion' },
-            { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
+            { titulo : 'INDICADORES ENVIADOS', url: '/dashboard/historial' }
         );
       
     }

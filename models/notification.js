@@ -8,6 +8,7 @@ const NotificationSchema = mongoose.Schema({
     fechaReporte: { type: Date, required: true, default: Date.now},
     uri: String,
     role: String,
+    detalle: String,
     trasmitter: {
         type: mongoose.Types.ObjectId, 
         ref: 'Usuario',

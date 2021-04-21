@@ -18,19 +18,32 @@ const creaNotification = (req, res) => {
 };
 
 // todos las opciones x user
-const getNotificationId = (req, res) => {
-    Notification.find({ "receiver" : req.query.user_id })
-        .populate('receiver').populate('trasmitter').sort({ fechaReporte: -1 })
-        .then(notification => {
-            res.json({
-                data: notification,
-                msg: 'Ok'
-            });
-        }).catch(err => {
-            res.status(500).send({
-                msg: err.message
-            });
+const getNotificationId = async(req, res) => {
+    const desde = Number(req.query.desde) || 0;
+
+    try {
+        const [ notifications, total ] = await Promise.all([
+            Notification
+                .find({ "receiver" : req.query.user_id })
+                .populate('receiver').populate('trasmitter')
+                .sort({ fechaReporte: -1 }).skip(desde).limit(10),
+            Notification.find({ "receiver" : req.query.user_id }).countDocuments()
+        ])
+        
+        res.json({
+            data: notifications,
+            total: total,
+            desde: desde+notifications.length,
+            ok: true
         });
+        
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({
+            ok: false,
+            msg: "Error inesperado"
+        });   
+    }
 };
 
 // get all UDPI
