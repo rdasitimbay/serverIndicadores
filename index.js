@@ -57,7 +57,13 @@ app.use( '/api/reforma', require('./routes/reforma') );
 app.use('/api/upload',uploadRoutes); 
 app.use('/api', userRoutesdocumentos)
 
-
+//Ruta 
+app.use('/api/latacunga', require('./routes/latacungas'));
+app.use( '/api/iasa', require('./routes/iasas') );
+app.use( '/api/santoDomingo', require('./routes/santoDomingos') );
+app.use('/api/unidadesRectorado', require('./routes/unidadesRectorados'));
+app.use( '/api/viceInvestigacion', require('./routes/viceInvestigacions') );
+app.use( '/api/viceAdministrativo', require('./routes/viceAdministrativos') );
 
 app.use('/api/img',imagenesRoutes);
 app.listen( process.env.PORT, () => {
