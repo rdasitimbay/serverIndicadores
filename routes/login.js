@@ -169,7 +169,8 @@ function obtenerMenu(ROLE) {
         menu[0].submenu.unshift(  
 
             { titulo : 'INDICADORES', url: '/dashboard/indicadoresGestion' },
-            { titulo : 'INDICADORES ENVIADOS', url: '/dashboard/historial' }
+            { titulo : 'INDICADORES ENVIADOS', url: '/dashboard/historial' },
+            { titulo : 'INDICADOR REPORTES', url: '/dashboard/reportesIndicador' }
         );
       
     }
@@ -178,6 +179,7 @@ function obtenerMenu(ROLE) {
         menu[0].submenu.unshift(  
 
             { titulo : 'INDICADORES UPDI', url: '/dashboard/indicadoresUpdi' },
+            { titulo : 'INDICADOR REPORTES', url: '/dashboard/reportesIndicador' }
           //  { titulo : 'INDICADORES EVIADOS', url: '/dashboard/historial' }
         );
       
