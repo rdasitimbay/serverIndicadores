@@ -11,7 +11,7 @@ const creaIndicador = (req, res) => {
     const indicador = new Indicadores(req.body);
 
     // GUARDAR UNA OPCION EN MongoDB
-   indicador.save()
+    indicador.save()
         .then(data => {
             res.json(data);
         }).catch(err => {
@@ -38,9 +38,9 @@ const getIndicador = (req, res) => {
 
 // todos las opciones
 const getIndicadorId = (req, res) => {
-    Indicadores.find({usuario:req.query.usuario_id}).sort({ fechaReporte: -1 })
+    Indicadores.find({ usuario: req.query.usuario_id }).sort({ fechaReporte: -1 })
 
-    .populate('usuario ')
+        .populate('usuario ')
         .then(indicador => {
             res.json(indicador);
         }).catch(err => {
@@ -52,7 +52,7 @@ const getIndicadorId = (req, res) => {
 
 
 //ENCUENTRE UNA OPCION
-const getIdIndicador =  (req, res) => {
+const getIdIndicador = (req, res) => {
     Indicadores.findById(req.params._id)
         .then(indicador => {
             if (!indicador) {
@@ -74,7 +74,7 @@ const getIdIndicador =  (req, res) => {
 };
 
 // ACTUALIZAR OPCION
-const actualizarIndicadores =  (req, res) => {
+const actualizarIndicadores = (req, res) => {
     //Encuentra un cliente y actualízalo
     Indicadores.findByIdAndUpdate(req.body._id, req.body, { new: true })
         .then(indicador => {
@@ -123,6 +123,43 @@ const eliminarIndicador = (req, res) => {
         });
 };
 
+//ENCUENTRE CON FILTRO
+const filtrosIndicadores = async(req, res) => {
+
+    try {
+        if ( req.query.unidad == 'TODOS') {
+            const indicadores = await Indicadores.find({
+                $and: [
+                    { fechaReporte: { $gte: new Date(req.query.desde) } },
+                    { fechaReporte: { $lte: new Date(req.query.hasta) } }
+                ] 
+            }).sort({ fechaReporte: -1 });
+            res.json({
+                data: indicadores,
+                ok: true
+            });
+        } else {
+            const indicadores = await Indicadores.find({
+                'unidad': req.query.unidad, $and: [
+                    { fechaReporte: { $gte: new Date(req.query.desde) } },
+                    { fechaReporte: { $lte: new Date(req.query.hasta) } }
+                ] 
+            }).sort({ fechaReporte: -1 });
+            res.json({
+                data: indicadores,
+                ok: true
+            });
+        }
+        
+    } catch (error) {
+        res.status(500).send({
+            ok: false,
+            msg: "Error inesperado"
+        });   
+    }
+    
+};
+
 
 module.exports = {
 
@@ -131,6 +168,7 @@ module.exports = {
     getIndicadorId,
     getIdIndicador,
     actualizarIndicadores,
-    eliminarIndicador
+    eliminarIndicador,
+    filtrosIndicadores
 
 }
