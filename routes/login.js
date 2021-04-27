@@ -142,7 +142,16 @@ function obtenerMenu(ROLE) {
     if (ROLE === 'REQUIRENTE_ROLE') {
         menu[0].submenu.unshift(  
             { titulo : 'REFORMAS PRESUPUESTARIAS', url: '/dashboard/reformas' },
-            { titulo : 'REFORMAS ', url: '/dashboard/reformasRequirente' }
+            { titulo : 'REFORMAS ', url: '/dashboard/reformasRequirente' },
+            //{ titulo : 'GASTO CORRIENTE', url: '/dashboard/gasto-corriente' },
+            { titulo : 'GASTO INVERSION', url: '/dashboard/gasto-inversion' },
+            { titulo : 'RESUMEN', url: '/dashboard/resumen-pug-informe' },
+            { titulo : 'IASA', url: '/dashboard/iasa' },
+            { titulo : 'LATACUNGA', url: '/dashboard/latacunga' },
+            { titulo : 'SANTO DOMINGO', url: '/dashboard/santo-domingo' },
+            { titulo : 'UNIDADES RECTORADO', url: '/dashboard/unidades-rectorado' },
+            { titulo : 'VICE ADMINISTRATIVO', url: '/dashboard/vice-administrativo' },
+            { titulo : 'VICE INVESTIGACION', url: '/dashboard/vice-investigacion' }
         );
       
     }
