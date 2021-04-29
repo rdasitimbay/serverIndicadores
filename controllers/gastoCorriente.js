@@ -1,17 +1,15 @@
 var express = require('express');
-
-
-const Latacungas = require('../models/latacungas');
+const gastoCorrientes = require('../models/gastoCorrientes');
 
 
 
-// POST CREAR CLIENTE
-const creaLatacunga = (req, res) => {
+// POST CREAR CLIENTE 
+const creaGastoCorriente = (req, res) => {
     // Crear un cliente
-    const latacunga = new Latacungas(req.body);
+    const gastoCorriente = new gastoCorrientes(req.body);
 
     // GUARDAR UNA OPCION EN MongoDB
-    latacunga.save()
+    gastoCorriente.save()
         .then(data => {
             res.json(data);
         }).catch(err => {
@@ -23,10 +21,10 @@ const creaLatacunga = (req, res) => {
 
 
 // todos las opciones
-const getLatacunga = (req, res) => {
-    Latacungas.find({}).populate('usuario img')
-        .then(latacunga => {
-            res.json(latacunga);
+const getGastoCorriente = (req, res) => {
+    gastoCorrientes.find({}).populate('usuario img')
+        .then(iasa => {
+            res.json(iasa);
         }).catch(err => {
             res.status(500).send({
                 msg: err.message
@@ -37,12 +35,12 @@ const getLatacunga = (req, res) => {
 
 
 // todos las opciones
-const getLatacungaId = (req, res) => {
-    Latacungas.find({usuario:req.query.usuario_id})
+const getGastoCorrienteId = (req, res) => {
+    gastoCorrientes.find({ usuario: req.query.usuario_id })
 
-    .populate('usuario ')
-        .then(latacunga => {
-            res.json(latacunga);
+        .populate('usuario ')
+        .then(iasa => {
+            res.json(iasa);
         }).catch(err => {
             res.status(500).send({
                 msg: err.message
@@ -52,15 +50,15 @@ const getLatacungaId = (req, res) => {
 
 
 //ENCUENTRE UNA OPCION
-const getIdLatacunga=  (req, res) => {
-    Latacungas.findById(req.params._id)
-        .then(latacunga => {
-            if (!latacunga) {
+const getIdGastoCorriente = (req, res) => {
+    GastoCorrientes.findById(req.params._id)
+        .then(gastoCorriente => {
+            if (!gastoCorriente) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
             }
-            res.json(latacunga);
+            res.json(gastoCorriente);
         }).catch(err => {
             if (err.kind === 'ObjectId') {
                 return res.status(404).json({
@@ -74,16 +72,16 @@ const getIdLatacunga=  (req, res) => {
 };
 
 // ACTUALIZAR OPCION
-const actualizarLatacunga =  (req, res) => {
+const actualizarGastoCorriente = (req, res) => {
     //Encuentra un cliente y actualízalo
-    Latacungas.findByIdAndUpdate(req.body._id, req.body, { new: true })
-        .then(latacunga => {
-            if (!latacunga) {
+    GastoCorrientes.findByIdAndUpdate(req.body._id, req.body, { new: true })
+        .then(gastoCorriente => {
+            if (!gastoCorriente) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
             }
-            res.json(latacunga);
+            res.json(gastoCorriente);
         }).catch(err => {
             if (err.kind === 'ObjectId') {
                 return res.status(404).json({
@@ -102,10 +100,10 @@ const actualizarLatacunga =  (req, res) => {
 
 
 //ELIMINAR OPCION
-const eliminarLatacunga = (req, res) => {
-    Iasas.findByIdAndDelete(req.params._id)
-        .then(latacunga => {
-            if (!latacunga) {
+const eliminarGastoCorriente = (req, res) => {
+    GastoCorrientes.findByIdAndDelete(req.params._id)
+        .then(gastoCorriente => {
+            if (!gastoCorriente) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
@@ -121,16 +119,50 @@ const eliminarLatacunga = (req, res) => {
                 msg: "Could not delete opciones with id " + req.params._id
             });
         });
+
+};
+
+
+// filtrar
+const filtrosIndicadores = async (req, res) => {
+
+    try {
+        let enviarGasto = [];
+        const gasto = new RegExp(req.query.tipoGasto, 'i');
+
+        const gastos = await gastoCorrientes.find({
+            tipoGasto: gasto,
+        })
+
+        gastos[0].campos.forEach(element => {
+            if( element.Extension.includes(req.query.extension) ) {
+                enviarGasto.push(element);
+            }
+        });
+
+        res.json({
+            data: enviarGasto,
+            ok: true
+        });
+
+    } catch (error) {
+        res.status(500).send({
+            ok: false,
+            msg: "Error inesperado"
+        });
+    }
+
 };
 
 
 module.exports = {
 
-    creaLatacunga,
-    getLatacunga,
-    getLatacungaId,
-    getIdLatacunga,
-    actualizarLatacunga,
-    eliminarLatacunga
+    creaGastoCorriente,
+    getGastoCorriente,
+    getGastoCorrienteId,
+    getIdGastoCorriente,
+    actualizarGastoCorriente,
+    eliminarGastoCorriente,
+    filtrosIndicadores
 
 }

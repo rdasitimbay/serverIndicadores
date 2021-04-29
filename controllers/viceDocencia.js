@@ -1,17 +1,17 @@
 var express = require('express');
 
 
-const Latacungas = require('../models/latacungas');
+const ViceDocencias = require('../models/viceDocencias');
 
 
 
 // POST CREAR CLIENTE
-const creaLatacunga = (req, res) => {
+const creaViceDocencia = (req, res) => {
     // Crear un cliente
-    const latacunga = new Latacungas(req.body);
+    const viceDocencia = new ViceDocencias(req.body);
 
     // GUARDAR UNA OPCION EN MongoDB
-    latacunga.save()
+    viceDocencia.save()
         .then(data => {
             res.json(data);
         }).catch(err => {
@@ -23,10 +23,10 @@ const creaLatacunga = (req, res) => {
 
 
 // todos las opciones
-const getLatacunga = (req, res) => {
-    Latacungas.find({}).populate('usuario img')
-        .then(latacunga => {
-            res.json(latacunga);
+const getViceDocencia = (req, res) => {
+    ViceDocencias.find({}).populate('usuario img')
+        .then(viceDocencia => {
+            res.json(viceDocencia);
         }).catch(err => {
             res.status(500).send({
                 msg: err.message
@@ -37,12 +37,12 @@ const getLatacunga = (req, res) => {
 
 
 // todos las opciones
-const getLatacungaId = (req, res) => {
-    Latacungas.find({usuario:req.query.usuario_id})
+const getViceDocenciaId = (req, res) => {
+    ViceDocencias.find({usuario:req.query.usuario_id})
 
     .populate('usuario ')
-        .then(latacunga => {
-            res.json(latacunga);
+        .then(viceDocencia => {
+            res.json(viceDocencia);
         }).catch(err => {
             res.status(500).send({
                 msg: err.message
@@ -52,15 +52,15 @@ const getLatacungaId = (req, res) => {
 
 
 //ENCUENTRE UNA OPCION
-const getIdLatacunga=  (req, res) => {
-    Latacungas.findById(req.params._id)
-        .then(latacunga => {
-            if (!latacunga) {
+const getIdViceDocencia=  (req, res) => {
+    ViceDocencias.findById(req.params._id)
+        .then(viceDocencia => {
+            if (!viceDocencia) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
             }
-            res.json(latacunga);
+            res.json(viceDocencia);
         }).catch(err => {
             if (err.kind === 'ObjectId') {
                 return res.status(404).json({
@@ -74,16 +74,16 @@ const getIdLatacunga=  (req, res) => {
 };
 
 // ACTUALIZAR OPCION
-const actualizarLatacunga =  (req, res) => {
+const actualizarViceDocencia=  (req, res) => {
     //Encuentra un cliente y actualízalo
-    Latacungas.findByIdAndUpdate(req.body._id, req.body, { new: true })
-        .then(latacunga => {
-            if (!latacunga) {
+    ViceDocencias.findByIdAndUpdate(req.body._id, req.body, { new: true })
+        .then(viceDocencia => {
+            if (!viceDocencia) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
             }
-            res.json(latacunga);
+            res.json(viceDocencia);
         }).catch(err => {
             if (err.kind === 'ObjectId') {
                 return res.status(404).json({
@@ -102,10 +102,10 @@ const actualizarLatacunga =  (req, res) => {
 
 
 //ELIMINAR OPCION
-const eliminarLatacunga = (req, res) => {
-    Iasas.findByIdAndDelete(req.params._id)
-        .then(latacunga => {
-            if (!latacunga) {
+const eliminarViceDocencia = (req, res) => {
+    ViceDocencias.findByIdAndDelete(req.params._id)
+        .then(viceDocencia => {
+            if (!viceDocencia) {
                 return res.status(404).json({
                     msg: "Opciones not found with id " + req.params._id
                 });
@@ -125,12 +125,12 @@ const eliminarLatacunga = (req, res) => {
 
 
 module.exports = {
-
-    creaLatacunga,
-    getLatacunga,
-    getLatacungaId,
-    getIdLatacunga,
-    actualizarLatacunga,
-    eliminarLatacunga
+     
+    creaViceDocencia,
+    getViceDocencia,
+    getViceDocenciaId,
+    getIdViceDocencia,
+    actualizarViceDocencia,
+    eliminarViceDocencia
 
 }

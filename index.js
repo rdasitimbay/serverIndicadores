@@ -64,6 +64,9 @@ app.use( '/api/santoDomingo', require('./routes/santoDomingos') );
 app.use('/api/unidadesRectorado', require('./routes/unidadesRectorados'));
 app.use( '/api/viceInvestigacion', require('./routes/viceInvestigacions') );
 app.use( '/api/viceAdministrativo', require('./routes/viceAdministrativos') );
+app.use( '/api/gastoCorriente', require('./routes/gastoCorrientes') );
+app.use( '/api/viceDocencia', require('./routes/viceDocencias') );
+app.use( '/api/vag', require('./routes/vags') );
 
 app.use('/api/img',imagenesRoutes);
 app.listen( process.env.PORT, () => {
