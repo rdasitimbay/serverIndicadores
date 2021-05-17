@@ -1,5 +1,7 @@
 var express = require('express');
 
+const path = require('path');
+
 
 const Indicadores = require('../models/indicadores');
 
@@ -12,6 +14,19 @@ const creaIndicador = (req, res) => {
 
     // GUARDAR UNA OPCION EN MongoDB
     indicador.save()
+        .then(data => {
+            res.json(data);
+        }).catch(err => {
+            res.status(500).json({
+                msg: err.message
+            });
+        });
+};
+
+// POST VARIOS CREAR INDICADOR
+const allCreaIndicador = (req, res) => {
+    // Crear un cliente
+    Indicadores.insertMany(req.body)
         .then(data => {
             res.json(data);
         }).catch(err => {
@@ -160,15 +175,28 @@ const filtrosIndicadores = async(req, res) => {
     
 };
 
+//ENCUENTRE CON FILTRO
+const descargarFileIndicador = async(req, res) => {
+
+    const tipo = req.query.tipo;
+    const file = req.query.file;
+    const pathImagen = path.resolve( __dirname, `../uploads/${ tipo }/${ file }`)
+    
+    res.sendFile(pathImagen);
+
+};
+
 
 module.exports = {
 
     creaIndicador,
+    allCreaIndicador,
     getIndicador,
     getIndicadorId,
     getIdIndicador,
     actualizarIndicadores,
     eliminarIndicador,
-    filtrosIndicadores
+    filtrosIndicadores,
+    descargarFileIndicador
 
 }

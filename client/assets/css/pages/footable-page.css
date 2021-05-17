@@ -46,7 +46,7 @@ Table- Footable
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
 
-#demo-input-search2 {
+.demo-input-search2 {
   border: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#398bf7), to(#398bf7)), -webkit-gradient(linear, left top, left bottom, from(#b1b8bb), to(#b1b8bb));
   background-image: -webkit-linear-gradient(#398bf7, #398bf7), -webkit-linear-gradient(#b1b8bb, #b1b8bb);
@@ -65,7 +65,7 @@ Table- Footable
   border-radius: 0;
   margin-left: 10px;
   color: #67757c; }
-  #demo-input-search2:focus {
+  .demo-input-search2:focus {
     outline: none;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#398bf7), to(#398bf7)), -webkit-gradient(linear, left top, left bottom, from(#b1b8bb), to(#b1b8bb));
     background-image: -webkit-linear-gradient(#398bf7, #398bf7), -webkit-linear-gradient(#b1b8bb, #b1b8bb);
