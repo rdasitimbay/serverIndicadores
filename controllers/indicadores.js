@@ -139,15 +139,15 @@ const eliminarIndicador = (req, res) => {
 };
 
 //ENCUENTRE CON FILTRO
-const filtrosIndicadores = async(req, res) => {
+const filtrosIndicadores = async (req, res) => {
 
     try {
-        if ( req.query.unidad == 'TODOS') {
+        if (req.query.unidad == 'TODOS') {
             const indicadores = await Indicadores.find({
                 $and: [
                     { fechaReporte: { $gte: new Date(req.query.desde) } },
                     { fechaReporte: { $lte: new Date(req.query.hasta) } }
-                ] 
+                ]
             }).sort({ fechaReporte: -1 });
             res.json({
                 data: indicadores,
@@ -158,30 +158,63 @@ const filtrosIndicadores = async(req, res) => {
                 'unidad': req.query.unidad, $and: [
                     { fechaReporte: { $gte: new Date(req.query.desde) } },
                     { fechaReporte: { $lte: new Date(req.query.hasta) } }
-                ] 
+                ]
             }).sort({ fechaReporte: -1 });
             res.json({
                 data: indicadores,
                 ok: true
             });
         }
-        
+
     } catch (error) {
         res.status(500).send({
             ok: false,
             msg: "Error inesperado"
-        });   
+        });
     }
-    
+
+};
+
+//Unidades de Indicadores
+const getUnidadesIndicador = async (req, res) => {
+
+    Indicadores.find({}).distinct('unidad')
+        .then(indicador => {
+            res.json(indicador);
+        }).catch(err => {
+            res.status(500).send({
+                msg: err.message
+            });
+        });
+
+};
+
+//Eliminar Varios dIndicadores
+const deleteIndicadoresVarios = async (req, res) => {
+    // Eliminar un cliente
+    Indicadores.deleteMany( { _id: req.body })
+        .then(data => {
+            res.json(
+                {
+                    msg: 'Eliminados Correctamente',
+                    ok: true
+                }
+            );
+        }).catch(err => {
+            res.status(500).json({
+                msg: err.message
+            });
+        });
+
 };
 
 //ENCUENTRE CON FILTRO
-const descargarFileIndicador = async(req, res) => {
+const descargarFileIndicador = async (req, res) => {
 
     const tipo = req.query.tipo;
     const file = req.query.file;
-    const pathImagen = path.resolve( __dirname, `../uploads/${ tipo }/${ file }`)
-    
+    const pathImagen = path.resolve(__dirname, `../uploads/${tipo}/${file}`)
+
     res.sendFile(pathImagen);
 
 };
@@ -197,6 +230,8 @@ module.exports = {
     actualizarIndicadores,
     eliminarIndicador,
     filtrosIndicadores,
-    descargarFileIndicador
+    descargarFileIndicador,
+    getUnidadesIndicador,
+    deleteIndicadoresVarios
 
 }

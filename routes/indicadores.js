@@ -8,6 +8,8 @@ const router = Router();
 router.post('/',Indicador.creaIndicador);
 //Todos Indicadores
 router.post('/todos',Indicador.allCreaIndicador);
+//Unidades Indicadores
+router.get('/unidades',Indicador.getUnidadesIndicador);
  
 router.get('/',Indicador.getIndicadorId);
 router.get('/todos',Indicador.getIndicador );
@@ -18,6 +20,9 @@ router.get('/descargar',Indicador.descargarFileIndicador);
 router.get('/:_id',Indicador.getIdIndicador);
 router.put('/',Indicador.actualizarIndicadores);
 router.delete('/:_id',Indicador.eliminarIndicador);
+
+//Eliminar varios
+router.post('/deleteAll',Indicador.deleteIndicadoresVarios);
 //archivos
 
 
