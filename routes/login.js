@@ -133,8 +133,10 @@ function obtenerMenu(ROLE) {
     
     if (ROLE === 'RECTOR_ROLE') {
         menu[0].submenu.unshift(  
+            { titulo : 'INICIO', url: '/dashboard' },
+            { titulo : 'INDICADOR REPORTES', url: '/dashboard/reportesIndicador' }, 
+            { titulo : 'RESUMEN', url: '/dashboard/resumen-pug-informe' },
            
-        
         );
       
     }

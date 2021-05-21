@@ -110,7 +110,7 @@
     <!-- ============================================================== -->
 
     <script>
-        // MAterial Date picker    
+        // MAterial Date picker
         $('#mdate').bootstrapMaterialDatePicker({ weekStart: 0, time: false });
         $('#timepicker').bootstrapMaterialDatePicker({ format: 'HH:mm', time: true, date: false });
         $('#date-format').bootstrapMaterialDatePicker({ format: 'dddd DD MMMM YYYY - HH:mm' });
@@ -195,13 +195,13 @@
     <!-- jQuery file upload -->
     <script src="./assets/plugins/dropify/dist/js/dropify.min.js"></script>
 
-<script src="runtime.0e49e2b53282f40c8925.js" defer></script><script src="polyfills.67b993cc144b2da69bb8.js" defer></script><script src="main.f6cf9c303cd6973f3fd5.js" defer></script></body>
+<script src="runtime.0e49e2b53282f40c8925.js" defer></script><script src="polyfills.67b993cc144b2da69bb8.js" defer></script><script src="main.221db0efa64094705c38.js" defer></script></body>
 
 <!--script>
     $(document).ready(function(){
         var from,to,subject,text;
-        $("#send_email").click(function(){		
-            to=$("#to").val();		
+        $("#send_email").click(function(){
+            to=$("#to").val();
             $("#message").text("Enviando correo electrónico ... Espere");
             $.get(this.url+'/send',{to:to},function(data){
             console.log(data)
@@ -209,8 +209,8 @@
             {
                 $("#message").empty().text("El correo electrónico con su clave se envió a "+to+" Por favor revise la bandeja de entrada o spam !");
             }
-          
-    
+
+
     });
         });
     });
