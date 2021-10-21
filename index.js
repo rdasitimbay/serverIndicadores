@@ -65,6 +65,7 @@ app.use('/api/unidadesRectorado', require('./routes/unidadesRectorados'));
 app.use( '/api/viceInvestigacion', require('./routes/viceInvestigacions') );
 app.use( '/api/viceAdministrativo', require('./routes/viceAdministrativos') );
 app.use( '/api/gastoCorriente', require('./routes/gastoCorrientes') );
+app.use( '/api/gastoInversion', require('./routes/gastoInversions') );
 app.use( '/api/viceDocencia', require('./routes/viceDocencias') );
 app.use( '/api/vag', require('./routes/vags') );
 
