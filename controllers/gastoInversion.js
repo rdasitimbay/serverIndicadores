@@ -1,8 +1,8 @@
 const express = require("express");
 const gastoInversions=require('../models/gastoInversions');
-
+//post de Creacion de un gastoInversion
 exports.crearGastoInversion= async (req,res)=>{
-    
+    // GUARDAR UNA OPCION EN MongoDB
     try{
         let gastoInversion;
 
@@ -16,7 +16,7 @@ exports.crearGastoInversion= async (req,res)=>{
         res.status(500).send('Hubo un error');
     }
 }
-
+//busca todas las opciones
 exports.obtenerGastoInversions = async(req,res)=>{
 
     try{
@@ -29,9 +29,9 @@ exports.obtenerGastoInversions = async(req,res)=>{
         res.status(500).send('Hubo un error');
     }
 }
-
+//ENCUENTRE UNA OPCION
 exports.obtenerGastoInversion = async (req, res) => {
-
+    // GUARDAR UNA OPCION EN MongoDB
     try {
         let gastoInversion = await gastoInversions.findById(req.params.id);
 

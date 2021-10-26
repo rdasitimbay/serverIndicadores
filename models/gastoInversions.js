@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+//Creacion de los modelos para mandar a la base de datos
 const gastoInversionsSchema=mongoose.Schema({
     Prestamo:{
         type:Number
@@ -14,13 +14,13 @@ const gastoInversionsSchema=mongoose.Schema({
         type:String
     },
     Edo:{
-        type:Number
+        type:String
     },
     Edodec:{
         type:String
     },
     Cup:{
-        type:String
+        type:Number
     },
     Proyecto:{
         type:String
@@ -44,7 +44,7 @@ const gastoInversionsSchema=mongoose.Schema({
         type:Number
     },
     Fuente:{
-        type:String
+        type:Number
     },
     Asiganado:{
         type:Number
@@ -105,5 +105,5 @@ const gastoInversionsSchema=mongoose.Schema({
     }
 },
 {colletion:'gastoInversion'})
-
+//Exportacion de los modelos 
 module.exports=mongoose.model('gastoInversions',gastoInversionsSchema)
