@@ -98,10 +98,10 @@ const gastoInversionsSchema=mongoose.Schema({
         type:Number
     },
     Justificacion:{
-        type:Number
+        type:String
     },
     Observaciones:{
-        type:Number
+        type:String
     }
 },
 {colletion:'gastoInversion'})
