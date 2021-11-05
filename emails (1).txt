@@ -1,0 +1,242 @@
+ASESORÍA JURÍDICA
+ase_juri@test.ec
+1234
+
+AUTOEVALUACIÓN Y ASEGURAMIENTO DE LA CALIDAD ACADÉMICA
+evaluacionseg@test.ec
+123
+
+BIBLIOTECA
+biblioteca@gmail.com
+123
+
+BIENESTAR ESTUDIANTIL
+bienestarestudiantil@gmail.com
+123
+
+CENTRO DE EDUCACIÓN CONTINUA
+centroeducacioncontinua@gmail.com
+123
+
+CENTRO DE INVESTIGACIONES Y APLICACIONES MILITARES - CICTE
+centroaplimilitares@test.ec
+123
+
+CENTRO DE NANOCIENCIA Y NANOTECNOLOGÍA
+cnano_tecno@test.ec
+12345
+
+CENTRO DE POSGRADOS
+centroposgrados@gmail.com
+123
+
+CIMSE
+cimse@test.ec
+123
+
+COMUNICACIÓN SOCIAL
+comunicacionsocial@gmail.com
+123
+
+DEPARTAMENTO DE CIENCIAS DE LA COMPUTACIÓN
+cienciascomputacion@test.ec
+1234
+
+DEPARTAMENTO DE CIENCIAS DE LA TIERRA Y LA CONSTRUCCIÓN - CARRERAS
+depatierra@test.ec
+123
+
+DEPARTAMENTO DE CIENCIAS DE LA VIDA Y AGRICULTURA  - CARRERAS
+depacienciascarrera@test.com
+123
+
+DEPARTAMENTO DE CIENCIAS DE LA VIDA Y LA AGRICULTURA
+depacienciasagri@test.com
+123
+
+DEPARTAMENTO DE CIENCIAS ECONÓMICAS, ADMINISTRATIVAS Y DE COMERCIO
+depaecono@test.com
+123
+
+DEPARTAMENTO DE CIENCIAS EXACTAS
+cienciasexactas@gmail.com
+1234
+
+DEPARTAMENTO DE CIENCIAS ECONÓMICAS, ADMINISTRATIVAS Y DE COMERCIO  - CARRERAS
+depaecocarrera@test.ec
+123
+
+DEPARTAMENTO DE CIENCIAS HUMANAS Y SOCIALES
+dcien_hum@test.ec
+1234
+
+DEPARTAMENTO DE CIENCIAS HUMANAS Y SOCIALES - CARRERAS
+depahumacarrera@test.ec
+123
+
+DEPARTAMENTO DE CIENCIAS MÉDICAS
+dcien_medi@test.ec
+123
+
+DEPARTAMENTO DE ELÉCTRICA Y ELECTRÓNICA
+deparelec_electronica@gmail.com
+1234
+
+DEPARTAMENTO DE ELÉCTRICA Y ELECTRÓNICA - CARRERAS
+depamecacarreras@gmail.com
+1234
+
+DEPARTAMENTO DE ENERGÍA Y MECÁNICA
+energiamecanica@test.ec
+1234
+
+DEPARTAMENTO DE CIENCIAS DE TIERRA Y LA CONSTRUCCIÓN - NO
+tierrayconstrucion@test.ec
+1234
+
+DEPARTAMENTO DE ELÉCTRICA, ELECTRÓNICA Y TELECOMUNICACIONES - NO
+electricastelecom@test.ec
+123
+
+INSTITUTO DE IDIOMAS - NO
+idiomasinsti24@gmail.com
+123
+
+FINANCIERO - NO
+financiero@test.ec
+123
+
+ADMISIÓN Y REGISTRO - NO
+admiregistro@test.ec
+123
+
+ESPE - LATACUNGA - NO
+espe_lata@test.ec
+123
+
+ESPE - SANTO DOMINGO - NO
+espesantod@test.ec
+123
+
+TALENTO HUMANO - NO
+thumano@gmail.com
+123
+
+GESTIÓN DE LA INVESTIGACIÓN
+ges_inves@test.ec
+123
+
+DEPARTAMENTO DE SEGURIDAD Y DEFENSA
+seguridadefensa@test.ec
+1234
+
+DESARROLLO EDUCATIVO
+desarrolloeducativo@gmail.com
+1234
+
+DESARROLLO FÍSICO
+desafisico@test.ec
+123
+
+EDUCACIÓN A DISTANCIA
+edudistancia@test.ec
+123
+
+IASAI - DEPARTAMENTO DE CIENCIAS DE LA VIDA Y LA AGRICULTURA
+iasadepa@test.ec
+123
+
+LOGISTICA
+logis@gmail.com
+123
+
+PLANIFICACIÓN Y DESARROLLO INSTITUCIONAL
+planificaciondesarrollo@test.com
+1234
+
+RELACIONES DE COOPERACIÓN INTERINSTITUCIONAL
+relacionescoop@test.ec
+123
+
+DEPARTAMENTO DE CIENCIAS HUMANAS Y SOCIALES CARRERAS
+depasocialcarreras@gmail.com
+1234
+
+SEDE DOMINGO - CARRERAS
+sededocarrera@test.ec
+123
+
+DESARROLLO EDUCATIVO
+desarrolloeducativo@gmail.com
+1234
+
+SEDE LATACUNGA
+sedelata@gmail.com
+1234
+
+SEDE LATACUNGA DEPARTAMENTOS
+sedelatadeparta@gmail.com
+1234
+
+SEDE LATACUNGA CARRERAS
+sedelatacarrera@gmail.com
+1234
+
+SEDE SANTO DOMINGO
+sedesantodo@gmail.com
+1234
+
+SEDE SANTO DOMINGO DEPARTAMENTOS
+sedesantodoparta@gmail.com
+1234
+
+SEGUIMIENTO A GRADUADOS
+seguimientograduad@gmail.com
+1234
+
+SEGURIDAD INTEGRADA
+seguridadintegrada@gmail.com
+123
+
+SERVICIOS UNIVERSITARIOS
+serviciosuniversitarios@gmail.com
+123
+
+TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIONES
+tecnoinfo@test.com
+1234
+
+UNIDAD DE GESTIÓN DE LA INVESTIGACIÓN
+unigestioninves@gmail.com
+1234
+
+UNIDAD DE TALENTO HUMANO
+unitalentohum@gmail.com
+1234
+
+UNIDAD DE SEGURIDAD FÍSICA
+unisegurifisica@gmail.com
+1234
+
+UNIDAD DE TALENTO HUMANO
+unitalentohum@gmail.com
+1234
+
+UNIDAD FINANCIERA
+unifin@test.ec
+123
+
+GESTIÓN DE VINCULACIÓN CON LA SOCIEDAD
+gestionvinculacionsociedad@gmail.com
+123
+
+VINCULACIÓN CON LA SOCIEDAD
+viculacionsociedad@test.edu.ec
+123
+
+
+
+
+
+
+

@@ -1,0 +1,443 @@
+[{
+  "_id": {
+    "$oid": "61647091a4ed270ea832cc3d"
+  },
+  "role": "IASA_1_ROLE",
+  "email": "iasa@test.ec",
+  "password": "$2a$10$otBvTK//ds1vLBKBIOqFcue3EaQhxQ6cjtX2T7Ex21wl7KvEZp1/S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647366a4ed270ea832cc3e"
+  },
+  "role": "ASESORIA_JURIDICA_ROLE",
+  "email": "ase_juri@test.ec",
+  "password": "$2a$10$FhuRY8fw5i4AdlDVn09gK.wthq3VJxZyRZI4uhllUDpDCmdqQS6t2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616474dca4ed270ea832cc3f"
+  },
+  "role": "CENTRO_DE_NANOCIENCIA_Y_NANOTECNOLOGIA_ROLE",
+  "email": "cnano_tecno@test.ec",
+  "password": "$2a$10$06f7JHNePhNwcG9xD792V.OmecNMy/VTq.i0VIRKjDPHilTamwQfy",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6164760da4ed270ea832cc41"
+  },
+  "role": "VICERRECTORADO_ACADEMICO_GENERAL_ROLE",
+  "email": "vice_acagene@test.ec",
+  "password": "$2a$10$vFiZkLOXjSDbbc0r0Sc/OuSO2CSjbe67Tr9a0mL2nhj7F548sidem",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6164767aa4ed270ea832cc42"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_MEDICAS_ROLE",
+  "email": "dcien_medi@test.ec",
+  "password": "$2a$10$zKBeYYHs2DftLWLxeUXJpuuFNPWEOCNr8HKwTHqb.rsmXor4qcZUW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616476a9a4ed270ea832cc43"
+  },
+  "role": "VICERRECTORADO_DE_DOCENCIA_ROLE",
+  "email": "vice_doce@test.ec",
+  "password": "$2a$10$k6BCgIQc0OHxOdBViTC66OYGh76oyqLZckxkMyF36y4c3sQz/grba",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647787a4ed270ea832cc44"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_HUMANAS_Y_SOCIALES_ROLE",
+  "email": "dcien_hum@test.ec",
+  "password": "$2a$10$0kWYb0wvvzMfKDENkU/wsujDwmtM.ahYEyX0ffBe9R93sucLiLXQa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647987a4ed270ea832cc45"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_DE_LA_VIDA_Y_DE_LA_AGRICULTURA_ROLE",
+  "email": "cienciasdelavidayagricultura@test.ec",
+  "password": "$2a$10$v2O8Q.b7FUz14B9FwTboh.4L0Wfeg57kZ0/mywpE.upwhHkj.4lXW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616479b3a4ed270ea832cc46"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_DE_LA_COMPUTACION_ROLE",
+  "email": "cienciascomputacion@test.ec",
+  "password": "$2a$10$mQzvUtuTgA0C3KeybwXOhu4/dbFyhMdRce..3/RsIfqRkjbpNGFEa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616479dba4ed270ea832cc47"
+  },
+  "role": "DEPARTAMENTO_DE_SEGURIDAD_Y_DEFENSA_ROLE",
+  "email": "seguridadefensa@test.ec",
+  "password": "$2a$10$bfBee4GAJVvv.dYVcNVPbu5arUB8rWOL1.i533HOLdsDZIfzMgY6C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616479f6a4ed270ea832cc48"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_ECONOMICAS_ADMINISTRATIVAS_DE_COMERCIO_ROLE",
+  "email": "cienciasecoadmcomercio@test.ec",
+  "password": "$2a$10$HsHkpW/XhYnrutTeaFl75OOQ6n3l7hnRWYm/GNtFPvAtr.pZuXocm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647a0da4ed270ea832cc49"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_DE_TIERRA_Y_LA_CONSTRUCCION_ROLE",
+  "email": "tierrayconstrucion@test.ec",
+  "password": "$2a$10$5CwlHek9KQDlsq9aYohVTOcKlyOCSogS2h7uhExzdrkBSDfWPAtLG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647a26a4ed270ea832cc4a"
+  },
+  "role": "DEPARTAMENTO_DE_ENERGIA_Y_MECANICA_ROLE",
+  "email": "energiamecanica@test.ec",
+  "password": "$2a$10$eEHNjSF1eqFD5rQVf15sAOWHmrhxRII.oHh8KFzdukqiVbt.Owcpu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647a39a4ed270ea832cc4b"
+  },
+  "role": "DEPARTAMENTO_DE_ELECTRICA_ELECTRONICA_Y_TELECOMUNICACIONES_ROLE",
+  "email": "electricastelecom@test.ec",
+  "password": "$2a$10$k9zjuCEh3nrzD0WW7cQ.C.uNoi031xyI7QRGhqS6AzdO6vysQSCye",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61647a4ba4ed270ea832cc4c"
+  },
+  "role": "DEPARTAMENTO_DE_CIENCIAS_EXACTAS_ROLE",
+  "email": "cienciasexactas@gmail.com",
+  "password": "$2a$10$edklkxyXACEScd3UBDCDG.UlXpQuR4Qa87qSevhl4vrWWn1FoA.m6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648242a4ed270ea832cc4d"
+  },
+  "role": "SEGURIDAD_INTEGRADA_ROLE",
+  "email": "seguridadintegrada86@gmail.com",
+  "password": "$2a$10$zV526NyQflZXklC/z8V26OAuJzi9I2d.BWG/HF6LzCblQ85KMrn.S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648254a4ed270ea832cc4e"
+  },
+  "role": "EDUCACION_A_DISTACIA_ROLE",
+  "email": "educaciondistancia56@gmail.com",
+  "password": "$2a$10$.i05e85pfEu3WDC4D4NvleUSTYe.lREXT3uO2F0q5QYAf93KiPuvW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648268a4ed270ea832cc4f"
+  },
+  "role": "INSTITUTO_DE_IDIOMAS_ROLE",
+  "email": "idiomasinsti24@gmail.com",
+  "password": "$2a$10$AA.WAXKDKnluNm1MgIk3CeyteEfl.EfkmNnqz8MRyBitBj/D62UwG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616482a1a4ed270ea832cc50"
+  },
+  "role": "CICTE_ROLE",
+  "email": "CICTE123@gmail.com",
+  "password": "$2a$10$weymdo4XZ8d7C82QvXC.Ru4h3XsLmWXm2ebpltW03jyWG/lVhwpaO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616482b5a4ed270ea832cc51"
+  },
+  "role": "TALENTO_HUMANO_ROLE",
+  "email": "thumano729@gmail.com",
+  "password": "$2a$10$rs1cltPu0ByfJj106iAi9ewQGH8k3LiFM.Ig/nirAqTQewDRB4LBW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648321a4ed270ea832cc53"
+  },
+  "role": "SECRETARIA_GENERAL_ROLE",
+  "email": "gsecretaria41@gmail.com",
+  "password": "$2a$10$OtXylD0ore8c9yM5EkuUxeHpJd3go8QtHSfATAxLX3Z8K7dPupQju",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648eeaa4ed270ea832cc54"
+  },
+  "role": "COMUNICACION_SOCIAL_ROLE",
+  "email": "comunicacionsocial@gmail.com",
+  "password": "$2a$10$6ZxoqKm5.dv7g3k/CX9ONOQNkm9B3UABZb.gdukM.ai.1pjDcoI36",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648f46a4ed270ea832cc55"
+  },
+  "role": "BIENESTAR_ESTUDIANTIL_ROLE",
+  "email": "bienestarestudiantil@gmail.com",
+  "password": "$2a$10$.bnf4gLmL0UDnhscGaWdw.xfnUDWbzA94RNZC.efCvd29TOcDZgZe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648f5fa4ed270ea832cc56"
+  },
+  "role": "BIBLIOTECA_ROLE",
+  "email": "biblioteca@gmail.com",
+  "password": "$2a$10$KCl7xX7NhdIN/pikSbtn0eT3o8AF8lvRgW6zCGqR2RSeznd70JYIa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648f87a4ed270ea832cc57"
+  },
+  "role": "CENTRO_DE_EDUCACIÓN_CONTINUA_ROLE",
+  "email": "centroeducacioncontinua@gmail.com",
+  "password": "$2a$10$VEe/gzgtxGmMbwFZyP2M5eyEpXr0AZxlCVtYj6AgbEzcFCJGQYeou",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648fb5a4ed270ea832cc58"
+  },
+  "role": "GESTION_DE_VINCULACION_CON_LA_SOCIEDAD_ROLE",
+  "email": "gestionvinculacionsociedad@gmail.com",
+  "password": "$2a$10$X0vTXBwDS4v7iqnHQF.2WONSbGfaetlTquMClj.p9A2IseX1LqUeq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61648fdea4ed270ea832cc59"
+  },
+  "role": "CENTRO_DE_POSGRADOS_ROLE",
+  "email": "centroposgrados@gmail.com",
+  "password": "$2a$10$/jN2Mde947fltuOTf1q0r.jCjiatTvl.aNFAa3XBGhieahHTjlqsC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61649002a4ed270ea832cc5a"
+  },
+  "role": "DESAROLLO_FISICO_ROLE",
+  "email": "desarrollofisico@gmail.com",
+  "password": "$2a$10$PCw2/UQKI7sJOnvNumydR.zY1eGPiFvV5qze5nifNlMLaUM.BjjxC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6164903ba4ed270ea832cc5b"
+  },
+  "role": "SERVICIOS_UNIVERSITARIOS_ROLE",
+  "email": "serviciosuniversitarios@gmail.com",
+  "password": "$2a$10$wIs5gMjKckl9dKqM.1xmJumRGfA0xz769XGgA7qPrlvqcyqyq1rju",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616491c9a4ed270ea832cc5c"
+  },
+  "role": "LOGISTICA_ROLE",
+  "email": "logis@gmail.com",
+  "password": "$2a$10$veFwE8Vp19nfiESrL6CVg.z.oti9pMlIqXCCnfyBP5MBkk9nxDQP.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616495c430b08c1dd8ccde03"
+  },
+  "role": "FINANCIERO_ROLE",
+  "email": "financiero@test.ec",
+  "password": "$2a$10$hFdf9fAD1FkE0NhgQaVUjuOAHDBmweav97.4y8AEBLtgWW9v30uNm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616495d730b08c1dd8ccde04"
+  },
+  "role": "PLANIFICADOR_ROLE",
+  "email": "planificacionadmi@test.ec",
+  "password": "$2a$10$65tFYITfmWiv1C055BPUne1S59.Z4WfUrdmaB5aFKRr2ujq3cTU8S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6164967c30b08c1dd8ccde05"
+  },
+  "role": "ADMISION_REGISTRO_ROLE",
+  "email": "admiregistro@test.ec",
+  "password": "$2a$10$q4m1bqjXVRd61qV2K6WO3esi3HPgOp0D/jtOzHaS9xoa4.qvV.QXG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6164969030b08c1dd8ccde06"
+  },
+  "role": "VICERECTOR_INVESTIGACION_INNOVACION_ROLE",
+  "email": "viceinvacion@test.ec",
+  "password": "$2a$10$r5TMw5vPSftWzcXe0dwRr.PVbQnhRqmFJ9gydXfAifp0bkdQzz7BO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "616496b030b08c1dd8ccde07"
+  },
+  "role": "TECNOLOGIAS_DE_LA_INFORMACIÓN_COMUNICACIONES_ROLE",
+  "email": "tecnoinfocomun@test.ec",
+  "password": "$2a$10$nCt.MGm8IV6/wmxCx.KtROnF3YqUYk.P1lHHcLQe.7Ae6efGiwlR2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61649ae7d5e4a50e24d42bdf"
+  },
+  "role": "ESPE_LATACUNGA_ROLE",
+  "email": "espelata@test.ec",
+  "password": "$2a$10$92E1s1bp1oJIpKb.I1W5lOV9d7L19qJNG2zh0nvFPU3pOOaCfprL6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61649afbd5e4a50e24d42be0"
+  },
+  "role": "ESPE_STO_DOMINGO_ROLE",
+  "email": "espesantod@test.ec",
+  "password": "$2a$10$RklIRfaSJOq7SMDHWCp.P.TrYADqeWNfciZkh4OacSf3b/tYuhD66",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61649c4cd5e4a50e24d42be1"
+  },
+  "role": "GESTION_INVESTIGACION_ROLE",
+  "email": "ges_inves@test.ec",
+  "password": "$2a$10$LkQeUbr7P/aNzE/m1UCQN.h6aaththW.ZZv1r4DzEjR5KFJDBEg8y",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ab0b914c81320435ffa08"
+  },
+  "role": "REQUIRENTE_ROLE",
+  "email": "grichard2786@gmail.com",
+  "password": "$2a$10$C.x0wIRb4GdGz9JwgIOgCOezB8PXUHFogc6RYsrgxlzUZBVurkCwC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6079ba088027456c10d33137"
+  },
+  "role": "PLANIFICADOR_ROLE",
+  "email": "planificador@test.ec",
+  "password": "$2a$10$dLAyPddFuY89Rmy7lCyYiusTbVc64NmQ4vwJb4oOCWMZkdleWR/fC",
+  "__v": 0,
+  "img": "6079ba088027456c10d33137-438.jpg"
+},{
+  "_id": {
+    "$oid": "6079ba5f8027456c10d33138"
+  },
+  "role": "UPDI_ROLE",
+  "email": "updi@test.ec",
+  "password": "$2a$10$EpZwmYecgPVXiiiXel5Ybuh97EgRUQwqng9Wshr3E.I63sYWNxXSm",
+  "__v": 0,
+  "img": "6079ba5f8027456c10d33138-229.jpg"
+},{
+  "_id": {
+    "$oid": "6079d6179710d93800c8e073"
+  },
+  "role": "REQUIRENTE_ROLE",
+  "email": "seguimiento@gmail.com",
+  "password": "$2a$10$I0ICVUgIQJXVcN8lb0OIQuvRwB7jbf85/7USk9hdyCv8A5UTwFsKK",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60301b19776c893babebb37e"
+  },
+  "role": "UPDI_ROLE",
+  "nombre": "GERMAN",
+  "email": "capital032786@gmail.com",
+  "password": "$2a$10$aYn9VI2L0HYZTS4WfWwQ0.5qZmbSYetMcgc/P8l38OwKY3W2Qzmzm",
+  "__v": 0,
+  "img": "60301b19776c893babebb37e-182.jpg"
+},{
+  "_id": {
+    "$oid": "6030203a776c893babebb37f"
+  },
+  "role": "REQUIRENTE_ROLE",
+  "nombre": "REQUIRENTE",
+  "email": "dmorales@gmail.com",
+  "password": "$2a$10$JTyQ7o57Rs7jKudv0oQp1eEMSU.QVhDpt8ALE.4CUH9w2p4m8fXPm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a837fb09a9a35d6a62e8c5"
+  },
+  "role": "ADMIN_ROLE",
+  "email": "admin@espe.edu.ec",
+  "password": "$2a$10$GbeGhOuEEpaBuMdUpdOPDOuAQBxuPitKMrEfPuDKclSc7NyRyPgAq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a8383809a9a35d6a62e8c6"
+  },
+  "role": "RECTOR_ROLE",
+  "email": "rectorado@espe.edu.ec",
+  "password": "$2a$10$T9FivEowvNPt4ZaD1A1jaOzt.RXv182Dmz80i27Rz8FWv7XUrz0qG",
+  "__v": 0,
+  "nombre": "RECTOR"
+},{
+  "_id": {
+    "$oid": "60302085776c893babebb380"
+  },
+  "role": "PLANIFICADOR_ROLE",
+  "nombre": "PLANIFICADOR",
+  "email": "usr_utic@gmail.com",
+  "password": "$2a$10$6oIUiM0EE/6IhqoIR2G2jO5unxeWS.U6hIV3pUmEF/pPBGU/JK3WG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60d0f246f4a87c2aaca2b115"
+  },
+  "role": "UPDI_ROLE",
+  "email": "gmalmagro1@espe.edu.ec",
+  "password": "$2a$10$Uczch2BO9UCd2MNNi4JI7.7C/vjozCeY7jY0N9U0X5Tt2hCronAJW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6132475f07449764eb1a04e5"
+  },
+  "role": "REQUIRENTE_ROLE",
+  "email": "gar.caicedo@yavirac.edu.ec",
+  "password": "$2a$10$DrfHIxXPiQ3j45MCEprUFeSCoVjR56qe5B47IiPPDqdqDeHqzgBne",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6026fb86ee1e9325704eedb5"
+  },
+  "role": "ADMIN_ROLE",
+  "nombre": "German",
+  "email": "capo2786@gmail.com",
+  "password": "$2a$10$NhpUyAfy.kzXi1VpCDhYzetJgf4oWiweELa7b9QQZfxGvN7JQ.uPm",
+  "__v": 0,
+  "img": "6026fb86ee1e9325704eedb5-825.jpg"
+},{
+  "_id": {
+    "$oid": "602d19aa14c81320435ffa09"
+  },
+  "role": "PLANIFICADOR_ROLE",
+  "email": "rasitimbay@icloud.com",
+  "password": "$2a$10$MQUeTHQhCcz2v58HAT41P.J1ZptfzuuUePOBNSMNxtF1bpnEh0ck6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603020ae776c893babebb381"
+  },
+  "role": "PRESUPUESTO_ROLE",
+  "email": "usr_th@gmail.com",
+  "password": "$2a$10$lLhomaSTEIYP0hJUuB7SveHXs1SjD0/kY4sKrhYOw9mUkKHn/nrvq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6026ff21ee1e9325704eedb6"
+  },
+  "role": "UPDI_ROLE",
+  "email": "rdasitimbay@espe.edu.ec",
+  "password": "$2a$10$5b4ECvZah1u7PPNJyxVCpuC6VhILoW10UMIXOyKWYUEFWZkBnPEHO",
+  "__v": 0,
+  "img": "6026ff21ee1e9325704eedb6-97.jpg"
+},{
+  "_id": {
+    "$oid": "61645f07b98a010c88b73cf7"
+  },
+  "role": "PLANIFICACION_ROLE",
+  "email": "planirole@test.ec",
+  "password": "$2a$10$KJwaU7xDinJfAPghT9wWM.5wFrcjnb6X5TY9GOBmw/VA1iGH0yIvu",
+  "__v": 0
+}]
